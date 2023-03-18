@@ -1,0 +1,60 @@
+.plans {
+  padding: 40px 100px;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 80px);
+  justify-content: space-between;
+
+  &Content {
+    &Header {
+      &Title {
+        color: var(--marina-blue);
+        font-size: 32px;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+      }
+      &Description {
+        margin: 8px 0 36px 0;
+        color: var(--cool-gray);
+        font-size: 16px;
+      }
+    }
+
+    &Cards {
+      display: flex;
+      gap: 20px;
+    }
+
+    &MonthOrYear {
+      background-color: var(--magnolia);
+      padding: 16px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 32px;
+      border-radius: 8px;
+
+      &Item {
+        font-size: 14px;
+        font-weight: 700;
+        margin: 0 16px;
+        color: var(--cool-gray);
+      }
+
+      .switchSelected {
+        color: var(--marina-blue);
+      }
+    }
+  }
+
+  &Actions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    &.onlyNext {
+      justify-content: flex-end;
+    }
+  }
+}

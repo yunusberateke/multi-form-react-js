@@ -1,0 +1,39 @@
+.addOns {
+  padding: 40px 100px;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 80px);
+  justify-content: space-between;
+
+  &Header {
+    &Title {
+      color: var(--marina-blue);
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+
+    &Description {
+      margin: 8px 0 36px 0;
+      color: var(--cool-gray);
+      font-size: 16px;
+    }
+  }
+
+  &Cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &Actions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    &.onlyNext {
+      justify-content: flex-end;
+    }
+  }
+}

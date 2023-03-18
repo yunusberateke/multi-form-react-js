@@ -1,0 +1,27 @@
+.switch {
+  background-color: var(--marina-blue);
+  border-radius: 12px;
+  width: 40px;
+  height: 20px;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+
+  &Dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--white);
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 4px;
+    margin: auto;
+    transition: left 300ms;
+
+    &.switchSelected {
+      left: 20px;
+    }
+  }
+}

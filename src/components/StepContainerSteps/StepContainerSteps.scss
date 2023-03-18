@@ -1,0 +1,78 @@
+.tnk-steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-repeat: no-repeat;
+  height: 528px;
+  width: 400px;
+  padding-top: 40px;
+
+  .step {
+    margin: 2px 0;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    max-width: 200px;
+    border-radius: 8px;
+    user-select: none;
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--marina-blue);
+    }
+
+    &-key {
+      color: var(--white);
+      border: 1px solid var(--white);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+
+      &.step-key-actived {
+        color: var(--marina-blue);
+        background: var(--light-blue);
+      }
+    }
+
+    .titles {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      width: 144px;
+      color: var(--white);
+
+      .step-subtitle {
+        font-weight: 500;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: var(--cool-gray);
+      }
+
+      .step-title {
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+
+    &.step-disabled {
+      cursor: not-allowed;
+
+      .step-title {
+        color: var(--cool-gray);
+      }
+
+      &:hover {
+        background-color: var(--cool-gray-soft);
+      }
+    }
+  }
+}

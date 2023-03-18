@@ -1,0 +1,35 @@
+.tknButton {
+  padding: 12px 24px;
+  border-radius: 8px;
+  background-color: var(--marina-blue);
+  color: var(--white);
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+
+  &:hover {
+    background-color: var(--light-marina-blue);
+  }
+
+  &.tknButtonDisabled {
+    cursor: not-allowed;
+    background-color: var(--cool-gray);
+  }
+
+  &.link {
+    background-color: transparent;
+    color: var(--marina-blue);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    padding: 0;
+
+    &:hover {
+      color: var(--light-marina-blue);
+    }
+
+    &.tknButtonDisabled {
+      color: var(--cool-gray);
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.addOnsCard {
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  border: 1px solid var(--purplish-blue);
+  background-color: var(--magnolia);
+  cursor: pointer;
+  user-select: none;
+
+  &:hover {
+    background-color: var(--white);
+  }
+
+  &Left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    &Content {
+      font-weight: 500;
+    }
+
+    &Title {
+      margin-bottom: 8px;
+      color: var(--marina-blue);
+    }
+
+    &Description {
+      color: var(--cool-gray);
+    }
+  }
+
+  &Price {
+    font-weight: 500;
+    color: var(--pastel-blue);
+  }
+}
